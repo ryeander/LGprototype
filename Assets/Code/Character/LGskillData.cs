@@ -30,14 +30,4 @@ public static class LGskillData {
 	}
 	public static Dictionary<uint,LGskill> Skills;
 
-	public static bool CanUseSkill(LGcharacter toCheck, uint skillID) {
-		LGskill skill = Skills [skillID];
-		for (int i = 0; i < (int)LGstatData.StatusType.COUNT; i++) {
-			if (skill.StatusReq [i] > toCheck.GetStat ((LGstatData.StatusType)i)) {
-				return false;
-			}
-		}
-		return true;
-	}
-
 }
