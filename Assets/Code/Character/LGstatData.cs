@@ -79,8 +79,15 @@ public static class LGstatData {
 			Baby.SetStat ((StatusType)i, kMaxStatus);
 		}
 		Baby.SetStat (StatusType.TOXICITY, kMinStatus);
+
+		// Roll Random Skills
+		Dictionary<uint, LGskill> genSkill = LGskillData.Skills;
+		Baby._AttackSkill = genSkill [(uint)RNGesus.Praise (0, genSkill.Count)];
+		Baby._ClassSkill = genSkill [(uint)RNGesus.Praise (0, genSkill.Count)];
+		Baby._UtilitySkill = genSkill [(uint)RNGesus.Praise (0, genSkill.Count)];
+		Baby._AugmentSkill = genSkill [(uint)RNGesus.Praise (0, genSkill.Count)];
+
+
 		return Baby;
 	}
-
-
 }

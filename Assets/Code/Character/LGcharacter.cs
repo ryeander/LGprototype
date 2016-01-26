@@ -76,7 +76,10 @@ public class LGcharacter : ScriptableObject {
 	}
 
 	// List of Skill IDs, used to look up skills from data
-	private List<uint> _Skills;
+	public LGskill _AttackSkill;
+	public LGskill _UtilitySkill;
+	public LGskill _ClassSkill;
+	public LGskill _AugmentSkill;
 
 	// Initialization Function for Character TODO: Saved Characters and other bullshit
 	public LGcharacter() {
@@ -90,16 +93,12 @@ public class LGcharacter : ScriptableObject {
 		for (int i = 0; i < (int)LGstatData.StatusType.COUNT; i++) {
 			output+=(string.Format ("{0} : {1}\n", (LGstatData.StatusType)i, GetStat((LGstatData.StatusType)i)));
 		}
+		output += string.Format ("Attack Skill : {0}\n", _AttackSkill.ToString());
+		output += string.Format ("Utility Skill : {0}\n", _UtilitySkill.ToString());
+		output += string.Format ("Class Skill : {0}\n", _ClassSkill.ToString());
+		output += string.Format ("Augment Skill : {0}\n", _AugmentSkill.ToString());
+
 		return output;
 	}
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

@@ -14,6 +14,8 @@ public class TestBuddyChar : MonoBehaviour {
 	LGcharacter c;
 	// Use this for initialization
 	void Start () {
+		// Test Loading Skills
+		LGskillData.LoadSkillsFromJSON();
 		// Test Mass Character Generation
 		MassTest (1000);
 
@@ -27,8 +29,6 @@ public class TestBuddyChar : MonoBehaviour {
 		LGskillData.SaveSkillsToJSON();
 		*/
 
-		// Test Loading Skills
-		LGskillData.LoadSkillsFromJSON();
 	}
 	
 	// Update is called once per frame

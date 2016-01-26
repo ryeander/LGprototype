@@ -61,6 +61,10 @@ public class LGskill {
 		return data;
 	}
 
+	public override string ToString ()
+	{
+		return string.Format ("{0} : Effect : {1} . Effort : {2} . SourceTrait : {3} . TargetTrait : {4}", _name, _effect, _effortCost, _sourceTrait, _targetTrait);
+	}
 	// TODO: Add in Exhaustion Logic/removing characters from fights
 	public bool CanUseSkill(LGcharacter toCheck) {
 		int energy = toCheck.GetStat (LGstatData.StatusType.ENERGY);

@@ -11,7 +11,7 @@
 	},
 	{
 		"ID":1,
-		"Name":"Dummy2",
+		"Name":"Taunt",
 		"EffortCost":1,
 		"Effect":7,
 		"Target":5,
@@ -21,7 +21,7 @@
 	},
 	{
 		"ID":2,
-		"Name":"Dummy3",
+		"Name":"Shoot",
 		"EffortCost":2,
 		"Effect":6,
 		"Target":4,
@@ -31,7 +31,7 @@
 	},
 	{
 		"ID":3,
-		"Name":"TEST",
+		"Name":"Guard",
 		"EffortCost":2,
 		"Effect":14,
 		"Target":4,
@@ -41,7 +41,7 @@
 	},
 	{
 		"ID":4,
-		"Name":"TEST2",
+		"Name":"Bash",
 		"EffortCost":4,
 		"Effect":10,
 		"Target":6,
