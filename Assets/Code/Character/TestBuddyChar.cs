@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class TestBuddyChar : MonoBehaviour {
 	[SerializeField]
@@ -13,7 +14,21 @@ public class TestBuddyChar : MonoBehaviour {
 	LGcharacter c;
 	// Use this for initialization
 	void Start () {
+		// Test Mass Character Generation
 		MassTest (1000);
+
+		// Test Saving
+		/*
+		LGskillData.Skills = new Dictionary<uint, LGskill>();
+		new LGskill(0,"Dummy1",2,LGskillData.EffectType.WOUND,LGstatData.TraitType.PROWRESS,LGstatData.TraitType.ENDURANCE,LGskillData.TargetType.SINGLE,LGskillData.TeamType.FOE);
+		new LGskill(1,"Dummy2",1,LGskillData.EffectType.CHEER,LGstatData.TraitType.CHARISMA,LGstatData.TraitType.CHARISMA,LGskillData.TargetType.ALL,LGskillData.TeamType.FRIEND);
+		new LGskill(2,"Dummy3",2,LGskillData.EffectType.DEMORALIZE,LGstatData.TraitType.CHARISMA,LGstatData.TraitType.CHARISMA,LGskillData.TargetType.DUO_RANDOM,LGskillData.TeamType.FOE);		
+		new LGskill(3,"TEST",2,LGskillData.EffectType.BRAVERY,LGstatData.TraitType.CHARISMA,LGstatData.TraitType.CHARISMA,LGskillData.TargetType.DUO_RANDOM,LGskillData.TeamType.FOE);		
+		LGskillData.SaveSkillsToJSON();
+		*/
+
+		// Test Loading Skills
+		LGskillData.LoadSkillsFromJSON();
 	}
 	
 	// Update is called once per frame

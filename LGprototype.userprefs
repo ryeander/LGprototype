@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Character\LGnameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Character\RNGesus.cs">
     <Files>
-      <File FileName="Assets\Code\Character\LGnameManager.cs" Line="11" Column="36" />
-      <File FileName="Assets\Code\Character\LGcharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Character\LGskill.cs" Line="21" Column="3" />
-      <File FileName="Assets\Code\Character\LGstatData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Character\TestBuddyChar.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Character\TestBuddyChar.cs" Line="14" Column="16" />
       <File FileName="Assets\Code\Character\LGskillData.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Character\LGskill.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Character\RNGesus.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Character\LGnameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Character\LGcharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Character\LGstatData.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
